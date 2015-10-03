@@ -1,0 +1,52 @@
+.social-share {
+  .facebook {
+    a, span {
+      color: #3b5998;
+    }
+  }
+
+  .twitter {
+    a, span {
+      color: #00aced;
+    }
+  }
+
+  .googleplus {
+    a, span {
+      color: #d34836;
+    }
+  }
+
+
+
+}
+
+.inline-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  li {
+    list-style-type: none;
+    display: inline;
+  }
+}
+
+
+
+// Social Share
+// --------------------------------------------------
+.social-share {
+  margin-bottom: 50px;
+}
+.socialcount {
+  text-align: center;
+  font-size: 1.5rem;
+  li {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  p > a,
+  li > a {
+    border-bottom-width: 0;
+  }
+}

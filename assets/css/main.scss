@@ -1,0 +1,33 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+---
+
+@charset "utf-8";
+
+@import "vendor/font-awesome/font-awesome";
+@import "vendor/magnific-popup/magnific-popup";
+
+
+@import "vendor/normalize";
+// @import "animate";
+@import "vars";
+@import "fonts";
+@import "grid";
+
+@import "base";
+@import "header";
+@import "hero";
+@import "services";
+@import "projects";
+@import "talks";
+@import "future-talk";
+@import "footer";
+
+@import "responsive";
+
+// Blog
+// @import "blog";
+// @import "basscss";
+// @import "main-blog";
+// @import "pygments";
+// @import "coderay";

@@ -1,89 +1,113 @@
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alexey Maslennikov | Welcome</title>
+---
+layout: home
+bodyClass: home
+comments: false
+---
+<section id="hero">
+  <div class="wrapper">
+    <article>
+      <h2>Hi, I'm Alexey Maslennikov</h2>
+      <p>I'm a software consultant from Ulm, Germany</p>
+    </article>
+    <span class="scroll-down fa-main fa-main-angle-down"></span>
+  </div>
+</section>
 
-    <link rel="stylesheet" type="text/css" href="css/foundation.min.css">
-    <link rel="stylesheet" type="text/css" href="css/app.css"/>
-    <!-- Modernizr CDN -->
-    <script src="http://cdn.jsdelivr.net/foundation/5.2.3/js/vendor/modernizr.js"></script>
-    <!-- Modernizr local fallback -->
-    <script>window.Modernizr || document.write('<script src="js/vendor/modernizr.js"><\/script>')</script>
-  </head>
-
-  <body>
-
-    <div class="row">
-      <div class="large-12 columns text-center">
-        <h1>Cloon...</h1>
-      </div>
+<section id="services" data-midnight="white">
+  <div class="wrapper">
+    <header>
+      <h3>What I do</h3>
+      <p>I'm more than just a developer</p>
+    </header>
+    <div class="content">
+      <article class="solutions fa-main fa-main-paper-plane">
+        <h3>Software Solutions</h3>
+        <p>I have vast experience creating robust and scalable applications
+        intended for mass-market use. From safety-relevant embedded systems to
+        web media marketplaces and complex APIs, I can work with your team to
+        create great products.</p>
+      </article>
+      <article class="trainings fa-main fa-main-graduation-cap">
+        <h3>Training</h3>
+        <p>I can help your company get proficient by giving trainings that will
+        expand your employee's knowledge by learning both theory about
+        languages, frameworks, and methodologies as well as practice with real
+        life examples.</p>
+      </article>
+      <article class="consulting fa-main fa-main-map-signs">
+        <h3>Consulting</h3>
+        <p>I can work with your company's employees by helping with Software
+        Architecture, API Design and Good Practices so that you can achieve a
+        maintainable and robust product.</p>
+      </article>
     </div>
+  </div>
+</section>
 
-    <div class="row">
-        <div class="large-12 columns text-center">
-            <div style="padding: 1rem 0 3rem 0">
-                <img src="img/cloon.png" style="width: 100%" alt="Soon..." title="Soon..."/>
-            </div>
-        </div>
+<section id="projects" data-midnight="white">
+  <div class="wrapper">
+    <header>
+      <h3>Projects I've been involved into</h3>
+      <p>Both commercial and open source contrubutions</p>
+      <a href="https://github.com/{{site.author.github}}" target="_blank" class="btn-cta secondary"><span class="fa fa-github"></span> Find more on Github</a>
+    </header>
+    <div class="content">
+      <ul>
+        <li>
+          <a target="_blank" href="http://www.2do2go.ru">
+            <h6>Node.js</h6>
+            <h5>2do2go</h5>
+            <p>I worked in a team of amazing specialists to create a
+            recreational hub for inhabitants of russian cities.</p>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://github.com/maslennikov/node-flowy">
+            <h6>Node.js</h6>
+            <h5>Flowy</h5>
+            <p>Fast and lightweight flow-control tool for Node.js for creating
+            robust and maintanable asynchronous logic.</p>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://github.com/maslennikov/tenge">
+            <h6>Node.js</h6>
+            <h5>Tenge</h5>
+            <p>A Node.js framework for creating lightweight backend persistence
+            layers.</p>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://github.com/NaturalNode/natural">
+            <h6>Node.js</h6>
+            <h5>Natural</h5>
+            <p>"Natural" is a general natural language facility for Node.js:
+            Tokenizing, stemming, classification, phonetics, string similarity
+            and much more.</p>
+          </a>
+        </li>
+      </ul>
     </div>
+  </div>
+</section>
 
-    <div class="row">
-      <div class="large-12 columns">
-      	<div class="panel">
-	        <h3>Up to know me better? Good for you!</h3>
-	        <p>I am an avid software developer having experience in a broad
-	        range of fields and technologies, from automotive embedded software
-	        to full-stack web development. My favourite platform is Node.js. My
-	        passion is aesthetics of my product and the development process
-	        itself.</p>
+<section id="talks" data-midnight="white">
+  <div class="wrapper">
+    <header>
+      <h3>Talks</h3>
+      <p>Sharing knowledge</p>
+    </header>
+    <div class="content">
+      {% for talk in site.data.talks %}
+      <article>
+        <a target="_blank" href="{{ talk.link }}">
+          <h4>{{ talk.title}}</h4>
+          <p>{{ talk.description }}</p>
+          <span class="more-info">Read more</span>
+        </a>
+      </article>
+      {% endfor %}
 
-	        <p>Soon this page will be blossoming with lots of goodies about me
-	        and my professional life. In the meantime, you can get in touch with
-	        me here:</p>
-
-	        <div class="row">
-	        	<div class="large-4 medium-6 columns">
-                    <p><a href="http://linkedin.com/in/MaslennikovAlexey" target="_blank">linkedin.com/in/MaslennikovAlexey</a><br/>Connect with me on LinkedIn</p>
-	        	</div>
-
-	        	<div class="large-4 medium-6 columns">
-	    		    <p><a href="http://github.com/maslennikov" target="_blank">github.com/maslennikov</a><br />Everything you need to know about my open source activity.</p>
-	    	    </div>
-
-                <div class="large-4 medium-12 columns">
-                    <p><a href="mailto:alexey@maslennikov.me" target="_blank">alexey@maslennikov.me</a><br/>Ping me via E-Mail - Every time I am happy to get a message from you!</p>
-	        	</div>
-
-			</div>
-      	</div>
-      </div>
     </div>
-
-
-    <!-- jquery CDN -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <!-- jQuery local fallback -->
-    <script>window.$ || document.write('<script src="js/vendor/jquery.js"><\/script>')</script>
-    <!-- Foundation JS CDN -->
-    <script src="http://cdn.jsdelivr.net/foundation/5.2.3/js/foundation.min.js"></script>
-    <!-- Foundation JS local fallback -->
-    <script>window.Foundation || document.write('<script src="js/foundation.min.js"><\/script>')</script>
-
-    <!-- Initialize Foundation -->
-    <script>$(document).foundation();</script>
-
-    <!-- Foundation CSS local fallback -->
-    <script>
-        $(document).ready(function() {
-        var bodyColor = $('body').css('color');
-        if(bodyColor != 'rgb(34, 34, 34)') {
-        $("head").prepend('');}});
-    </script>
-
-    <script>
-      $(document).foundation();
-    </script>
-  </body>
-</html>
+  </div>
+</section>

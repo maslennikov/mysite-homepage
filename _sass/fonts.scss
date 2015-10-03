@@ -1,0 +1,55 @@
+.fa-main:after, .fa-main:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* makes the font 33% larger relative to the icon container */
+.fa-main-lg:before, .fa-main-lg:after {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+
+.fa-main-angle-down:before {
+  content: "\f107";
+}
+
+.fa-main-twitter:before {
+  content: "\f099";
+}
+
+.fa-main-github:before {
+  content: "\f09b";
+}
+
+.fa-main-linkedin:before {
+  content: "\f0e1";
+}
+
+.fa-main-compass:before {
+  content: "\f14e";
+}
+
+.fa-main-book:before {
+  content: "\f02d";
+}
+
+.fa-main-bullseye:before {
+  content: "\f140";
+}
+
+.fa-main-paper-plane:before {
+  content: "\f1d8";
+}
+
+
+.fa-main-graduation-cap:before {
+  content: "\f19d";
+}
+
+.fa-main-map-signs:before {
+  content: "\f277";
+}

@@ -1,0 +1,50 @@
+# Site settings
+title: 'Alexey Maslennikov'
+description: >
+  The personal webpage of Alexey Maslennikov (@_maslennikov): A freelance
+  software engineer currently working with Javascript, Node.js, and C++.
+
+email: alexey@maslennikov.me
+
+
+logo: logos/144x144.png
+url: "http://maslennikov.me" # the base hostname & protocol for your site
+baseurl: ""
+
+# Owner/author information
+author:
+  name: Alexey Maslennikov
+  email: alexey@maslennikov.me
+  twitter: _maslennikov
+  github: maslennikov
+  linkedin: MaslennikovAlexey
+  xing: maslennikov
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink: :title
+
+# Build settings
+gems:
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+markdown: redcarpet
+markdown_ext:  markdown,mkdown,mkdn,mkd,md
+
+redcarpet:
+  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "fenced_code_blocks"]
+
+highlighter: pygments
+
+exclude: ["Gemfile", "Gemfile.lock", "README.md", "LICENSE"]
