@@ -1,10 +1,8 @@
 # Site settings
 title: 'Alexey Maslennikov'
 description: >
-  The personal webpage of Alexey Maslennikov (@_maslennikov): A freelance
-  software engineer currently working with Javascript, Node.js, and C++.
-
-email: alexey@maslennikov.me
+  Alexey Maslennikov: A freelance software developer and consultant from Germany
+  helping to craft highly scalable and robust applications.
 
 
 logo: logos/144x144.png
