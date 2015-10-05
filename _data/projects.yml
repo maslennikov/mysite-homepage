@@ -1,0 +1,53 @@
+- title: '2do2go'
+  link: 'http://www.2do2go.ru'
+  technology: 'Node.js'
+  description: >
+    I worked in a team of amazing specialists to create a recreational hub for
+    inhabitants of russian cities.
+  labels:
+    - javascript
+    - nodejs
+    - fullstack
+
+- title: 'Flowy'
+  link: 'https://github.com/maslennikov/node-flowy'
+  technology: 'Node.js'
+  description: >
+    Fast and lightweight flow-control tool for Node.js for creating robust and
+    maintanable asynchronous logic.
+  labels:
+    - opensource
+    - javascript
+    - nodejs
+
+- title: 'Tenge'
+  link: 'https://github.com/maslennikov/tenge'
+  technology: 'Node.js'
+  description: >
+    A Node.js framework for creating lightweight backend persistence layers.
+  labels:
+    - opensource
+    - javascript
+    - nodejs
+
+- title: 'Natural'
+  link: 'https://github.com/NaturalNode/natural'
+  technology: 'Node.js'
+  description: >
+    "Natural" is a general natural language facility for Node.js: Tokenizing,
+    stemming, classification, phonetics, string similarity and much more.
+  labels:
+    - opensource
+    - javascript
+    - nodejs
+
+- title: 'ECFG'
+  link: 'https://github.com/maslennikov/emacs-config'
+  technology: 'Emacs Lisp'
+  description: >
+    ECFG is fast and scalable Emacs configuration framework written in Lisp
+    dialect for pleasure of myself and for support of great Emacs community.
+  labels:
+    - opensource
+    - javascript
+    - nodejs

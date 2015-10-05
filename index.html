@@ -53,39 +53,15 @@ comments: false
     </header>
     <div class="content">
       <ul>
+        {% for project in site.data.projects %}
         <li>
-          <a target="_blank" href="http://www.2do2go.ru">
-            <h6>Node.js</h6>
-            <h5>2do2go</h5>
-            <p>I worked in a team of amazing specialists to create a
-            recreational hub for inhabitants of russian cities.</p>
+          <a target="_blank" href="{{project.link}}">
+            <h6>{{project.technology}}</h6>
+            <h5>{{project.title}}</h5>
+            <p>{{project.description}}</p>
           </a>
         </li>
-        <li>
-          <a target="_blank" href="https://github.com/maslennikov/node-flowy">
-            <h6>Node.js</h6>
-            <h5>Flowy</h5>
-            <p>Fast and lightweight flow-control tool for Node.js for creating
-            robust and maintanable asynchronous logic.</p>
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://github.com/maslennikov/tenge">
-            <h6>Node.js</h6>
-            <h5>Tenge</h5>
-            <p>A Node.js framework for creating lightweight backend persistence
-            layers.</p>
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://github.com/NaturalNode/natural">
-            <h6>Node.js</h6>
-            <h5>Natural</h5>
-            <p>"Natural" is a general natural language facility for Node.js:
-            Tokenizing, stemming, classification, phonetics, string similarity
-            and much more.</p>
-          </a>
-        </li>
+        {% endfor %}
       </ul>
     </div>
   </div>
