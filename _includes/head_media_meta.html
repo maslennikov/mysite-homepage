@@ -1,0 +1,23 @@
+<!-- Open Graph, see github.com/niallkennedy/open-graph-protocol-examples/blob/master/article.html -->
+<meta property="og:title" content="{{ dyn_title}}">
+<meta property="og:description" content="{{ dyn_description }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="{{ dyn_canonical }}">
+<meta property="og:image" content="{{ dyn_thumbnail }}">
+<meta property="og:image:type" content="image/png">
+
+<!-- Twitter Cards -->
+{% if site.author.twitter %}
+{% if page.image.feature %}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ site.url }}/images/posts/{{ page.image.feature }}">
+{% else %}
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="{{ site.url }}{{ dyn_thumbnail }}">
+{% endif %}
+<meta name="twitter:title" content="{{ dyn_title }}">
+<meta name="twitter:description" content="{{ dyn_description }}">
+<meta name="twitter:creator" content="@{{ site.author.twitter }}">
+{% endif %}

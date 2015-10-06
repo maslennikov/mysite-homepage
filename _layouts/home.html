@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+  {% include dynamics.html %}
+
+  <head prefix="og: http://ogp.me/ns#">
+    {% include head_base_meta.html %}
+    {% include head_media_meta.html %}
+    {% include head_assets.html %}
+  </head>
 
   <body class="{{page.bodyClass}}">
 

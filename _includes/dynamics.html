@@ -1,0 +1,11 @@
+{% capture dyn_title %}{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}{% endcapture %}
+
+{% capture dyn_description %}{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
+
+{% capture dyn_url %}{{ page.url | replace:'/index.html',''}}{% endcapture %}
+
+{% capture dyn_canonical %}{{ site.url }}{{ dyn_url }}{% endcapture %}
+
+{% capture dyn_siteimages %}{{ site.baseurl }}/assets/images{% endcapture %}
+
+{% capture dyn_thumbnail %}{% if page.image.thumb %}{{ dyn_url }}/assets/{{ page.image.thumb }}{% else %}{{ dyn_siteimages }}{{ site.logo }}{% endif %}{% endcapture %}
