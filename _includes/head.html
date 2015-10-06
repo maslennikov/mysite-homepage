@@ -5,7 +5,7 @@
     {% capture pagedescription %}{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
     {% capture pageurl %}{{ page.url | replace:'/index.html',''}}{% endcapture %}
     {% capture canonicalurl %}{{ site.url }}{{ pageurl }}{% endcapture %}
-    {% capture pagethumbnail %}{% if page.image.thumb %}{{ pageurl }}/assets/{{ page.image.thumb }}{% else %}{{ site.baseurl }}/assets/images/logo/am-opengraph.png{% endif %}{% endcapture %}
+    {% capture pagethumbnail %}{% if page.image.thumb %}{{ pageurl }}/assets/{{ page.image.thumb }}{% else %}{{ site.baseurl }}/assets/images/{{ site.logo }}{% endif %}{% endcapture %}
 
 
     <title>{{ pagetitle }}</title>
@@ -50,13 +50,13 @@
     {% if site.bing_verify %}<meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
 
     <!-- Icons -->
-    <link rel="apple-touch-icon" sizes="57x57" href="{{ site.baseurl }}/assets/images/logo/114x114.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ site.baseurl }}/assets/images/logo/114x114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ site.baseurl }}/assets/images/logo/144x144.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="{{ site.baseurl }}/assets/images/logo/144x144.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ site.baseurl }}/assets/images/logo/icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ site.baseurl }}/assets/images/logo/icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ site.baseurl }}/assets/images/logo/icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ site.baseurl }}/assets/images/logo/icon-144.png">
 
-    <link rel="mask-icon" href="{{ site.baseurl }}/assets/images/logo/logo-mask.svg" color="#192e43">
-    <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/assets/images/logo/64x64.png">
+    <link rel="mask-icon" href="{{ site.baseurl }}/assets/images/logo/icon-mask.svg" color="#192e43">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/assets/images/logo/icon-64.png">
 
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>

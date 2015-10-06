@@ -1,11 +1,11 @@
 # Site settings
 title: 'Alexey Maslennikov'
 description: >
-  Alexey Maslennikov: A freelance software developer and consultant from Germany
-  helping to craft highly scalable and robust applications.
+  I am a freelance software developer and consultant from Germany helping to
+  craft highly scalable and robust applications.
 
 
-logo: logos/144x144.png
+logo: logo/opengraph.png
 url: "http://maslennikov.me" # the base hostname & protocol for your site
 baseurl: ""
 

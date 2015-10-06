@@ -1,30 +1,30 @@
 @mixin flex($val) {
-	flex: $val;
-	-webkit-flex: $val;
-	-moz-flex: $val;
+    flex: $val;
+    -webkit-flex: $val;
+    -moz-flex: $val;
 }
 
 @mixin display-flex {
-	display: flex;
-	display: -webkit-flex;
-	-moz-display: flex;
+    display: flex;
+    display: -webkit-flex;
+    -moz-display: flex;
 }
 
 @mixin flex-props($flow, $justify, $content, $items) {
-	flex-flow: $flow;
-	justify-content: $justify;
-	align-content: $content;
-	align-items: $items;
+    flex-flow: $flow;
+    justify-content: $justify;
+    align-content: $content;
+    align-items: $items;
 
-	-webkit-flex-flow: $flow;
-	-webkit-justify-content: $justify;
-	-webkit-align-content: $content;
-	-webkit-align-items: $items;
+    -webkit-flex-flow: $flow;
+    -webkit-justify-content: $justify;
+    -webkit-align-content: $content;
+    -webkit-align-items: $items;
 
-	-moz-flex-flow: $flow;
-	-moz-justify-content: $justify;
-	-moz-align-content: $content;
-	-moz-align-items: $items;
+    -moz-flex-flow: $flow;
+    -moz-justify-content: $justify;
+    -moz-align-content: $content;
+    -moz-align-items: $items;
 }
 
 @mixin background-horizontal($startColor: #3C3C3C, $endColor: #999999) {
@@ -38,5 +38,5 @@
     filter:            progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$startColor}', endColorStr='#{$endColor}', gradientType='1');
 }
 
-$hero: #282d32;
+$hero: #1f2e3d;
 $cta: #c0392b;
