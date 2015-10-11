@@ -5,7 +5,8 @@ description: >
   craft highly scalable and robust applications.
 
 
-logo: '/logo/opengraph-square.png'
+logo: '/logo/opengraph-square_151011.png'
+logo_wide: '/logo/opengraph-wide_151011.png'
 url: 'http://maslennikov.me' # the base hostname & protocol for your site
 baseurl: ''
 

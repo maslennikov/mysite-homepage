@@ -9,3 +9,5 @@
 {% capture dyn_siteimages %}{{ site.baseurl }}/assets/images{% endcapture %}
 
 {% capture dyn_thumbnail %}{% if page.image.thumb %}{{ dyn_url }}/assets/{{ page.image.thumb }}{% else %}{{ dyn_siteimages }}{{ site.logo }}{% endif %}{% endcapture %}
+
+{% capture dyn_thumbnail_wide %}{% if page.image.feature %}{{ dyn_siteimages }}/posts/{{ page.image.feature }}{% else %}{{ dyn_siteimages }}{{ site.logo_wide }}{% endif %}{% endcapture %}

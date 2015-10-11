@@ -5,14 +5,14 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:url" content="{{ dyn_canonical }}">
-<meta property="og:image" content="{{ site.url }}{{ dyn_siteimages }}/logo/opengraph-wide.png">
+<meta property="og:image" content="{{ site.url }}{{ dyn_thumbnail_wide }}">
 <meta property="og:image:type" content="image/png">
 
 <!-- Twitter Cards -->
 {% if site.author.twitter %}
 {% if page.image.feature %}
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="{{ site.url }}/images/posts/{{ page.image.feature }}">
+<meta name="twitter:image" content="{{ site.url }}{{ dyn_thumbnail_wide }}">
 {% else %}
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="{{ site.url }}{{ dyn_thumbnail }}">
