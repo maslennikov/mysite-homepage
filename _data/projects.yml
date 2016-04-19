@@ -1,9 +1,33 @@
+- title: '2do2go relaunch'
+  link: 'http://www.2do2go.ru'
+  technology: 'Product Management'
+  description: >
+    After almost three years since I left the 2do2go project I came back to take
+    the lead of product development of the redesigned 2do2go family. To the time
+    of writing, the work is still ongoing.
+  labels:
+    - product
+    - ux
+    - management
+
+- title: 'Advanced Driver Assistance Systems: Surround View prouduct line'
+  link: 'http://www.continental-automotive.com/www/automotive_de_en/themes/passenger_cars/chassis_safety/adas/surround_view_en.html'
+  technology: 'Embedded C, C++'
+  description: >
+    I worked as a full-time developer in an international team of business unit
+    ADAS (Advanced Driver Assistance Systems) on introducing to the market new
+    product line including Surround View Cameras and intelligent Surround View
+    system.
+    labels:
+    - C/C++
+    - embedded
+
 - title: '2do2go'
   link: 'http://www.2do2go.ru'
   technology: 'Node.js'
   description: >
-    I worked in a team of amazing specialists to create a recreational hub for
-    inhabitants of russian cities.
+    I worked as a full-time developer in a team of amazing specialists to create
+    a recreational hub for inhabitants of russian cities.
   labels:
     - javascript
     - nodejs
@@ -25,17 +49,6 @@
   technology: 'Node.js'
   description: >
     A Node.js framework for creating lightweight backend persistence layers.
-  labels:
-    - opensource
-    - javascript
-    - nodejs
-
-- title: 'Natural'
-  link: 'https://github.com/NaturalNode/natural'
-  technology: 'Node.js'
-  description: >
-    "Natural" is a general natural language facility for Node.js: Tokenizing,
-    stemming, classification, phonetics, string similarity and much more.
   labels:
     - opensource
     - javascript
