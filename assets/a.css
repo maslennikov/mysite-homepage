@@ -13,6 +13,7 @@ html, body {
   font-size: 16px;
 }
 
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     cursor: default;
@@ -31,43 +32,65 @@ a {
     outline: 0
 }
 
-#hero-wrapper {
-    position: relative;
-    top: 20%;
-    padding: 0 40px;
-}
-
-#hero-wrapper .spacing {
-  float: left;
-  max-width: 110px;
-  height: 1px;
-  width: 11%;
-}
-
 h1,
-h2,
 .hero,
 #menu {
     font-family: "Open Sans", "Century Gothic", "Lucida Grande", Arial, sans-serif;
     color: white;
     text-shadow: 0 1px 1px #000;
+    font-weight: 300;
 }
-h1,
-h2 {
-  font-weight: 300;
+
+h1 {
   font-size: 40px;
 }
 
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+#hero-wrapper {
+    position: relative;
+    top: 20%;
+    word-break: break-word;
+}
+
+@media only screen and (max-width: 600px) {
+  #hero-wrapper {
+    top: 15%;
+  }
+}
+
+#hero-wrapper:after {
+  content: '';
+  display: block;
+  clear:both;
+}
+
+#hero-wrapper .spacing {
+  float: left;
+  width: 110px;
+  height: 1px;
+}
 
 .hero {
   float: left;
+  padding: 20px 40px;
 }
 
-.hero h2 {
-  padding-bottom: 10px
+@media only screen and (max-width: 600px) {
+  .hero {
+    background: rgba(0,0,0,0.4);
+  }
 }
 
-.hero h2 span {
+.hero h1 {
+  padding-bottom: 1ex;
+}
+
+.hero h1 span {
   display: inline-block;
 }
 
@@ -76,10 +99,6 @@ h2 {
 }
 .hero a:hover {
   border-bottom: 1px solid #f5d19a;
-}
-
-.hero h2 {
-    font-size: 60px
 }
 
 #menu-wrapper {
@@ -95,6 +114,12 @@ h2 {
   padding-left: 151px;
   text-shadow: 0 1px 1px #000;
   font-size: .7rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #menu {
+    font-size: .8rem;
+  }
 }
 
 #menu .block {
@@ -134,7 +159,7 @@ h2 {
 
 #menu .branding .logo {
   text-align: right;
-  font-size: .95em;
+  font-size: .665rem;
   padding: .5rem .6rem;
   position: absolute;
   bottom: 0;
