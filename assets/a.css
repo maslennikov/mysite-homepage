@@ -6,24 +6,28 @@
     list-style: none
 }
 
+html {
+  height: 100%;
+}
+
 html, body {
   width: 100%;
-  height: 100%;
   position: relative;
   font-size: 16px;
 }
 
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    cursor: default;
-    color: #000;
+  min-height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: default;
+  color: #000;
 
-    background: url(./bg.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  background: url(./bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 a {
@@ -53,13 +57,13 @@ h1 {
 
 #hero-wrapper {
     position: relative;
-    top: 20%;
+    padding-top: 20%;
     word-break: break-word;
 }
 
 @media only screen and (max-width: 600px) {
   #hero-wrapper {
-    top: 15%;
+    padding-top: 15%;
   }
 }
 
@@ -103,7 +107,7 @@ h1 {
 
 #menu-wrapper {
     position: absolute;
-    bottom: 20px;
+    bottom: 1.5rem;
     height: 4rem;
     left: 0;
     right: 0;
@@ -193,4 +197,62 @@ h3 span {
     display: block;
     color: #fff;
     font-weight: normal
+}
+
+
+/* learncode styling */
+
+body.learncode {
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: default;
+    background: none !important;
+    min-height: 100%;
+    position: relative;
+}
+
+.learncode #hero-wrapper {
+  padding-top: 3em;
+  padding-bottom: 5.5rem; /*hacking footer*/
+}
+
+@media only screen and (max-width: 600px) {
+  .learncode #hero-wrapper {
+    padding-top: 0;
+  }
+  .learncode .hero {
+    background: none;
+  }
+}
+
+.learncode #hero-wrapper .spacing {
+  display:none;
+}
+
+.learncode #hero-wrapper .hero {
+  max-width: 500px;
+  margin: 0 auto;
+  float: none;
+}
+
+.learncode #hero-wrapper .hero,
+.learncode #hero-wrapper .hero h1 {
+  color: black;
+  text-shadow: none;
+}
+
+
+.learncode #menu {
+  background: url(./bg.jpg) no-repeat bottom center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.learncode h1 {
+  padding-bottom: 1.5ex;
+}
+
+.learncode p {
+  margin-bottom: 2ex;
 }
