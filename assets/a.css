@@ -240,6 +240,13 @@ body.learncode {
   text-shadow: none;
 }
 
+.learncode .hero a {
+    color: #BF8D3F;
+}
+.learncode .hero a:hover {
+  border-bottom: 1px solid #BF8D3F;
+}
+
 
 .learncode #menu {
   background: url(./bg.jpg) no-repeat bottom center fixed;
