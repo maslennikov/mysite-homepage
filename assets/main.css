@@ -1,0 +1,122 @@
+@import url('yui-reset.css');
+* {
+    border: 0px solid #eee;
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+html {
+  height: 100%;
+}
+
+html, body {
+  width: 100%;
+  position: relative;
+  font-size: 18px;
+  font-weight: 300;
+  background: transparent;
+}
+
+
+body {
+  font-family: "Open Sans", "Century Gothic", "Lucida Grande", Arial, sans-serif;
+  cursor: default;
+  color: #000;
+
+  min-height: 100%;
+  position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    outline: 0
+}
+
+h1 {
+  color: black;
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 1.75ex;
+}
+
+h1 span {
+  display: inline-block;
+}
+
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+}
+
+#hero-wrapper {
+    position: relative;
+    padding-top: 3em;
+    word-break: break-word;
+}
+
+#hero-wrapper:after {
+  content: '';
+  display: block;
+  clear:both;
+}
+
+@media only screen and (max-width: 600px) {
+  #hero-wrapper {
+    padding-top: 0;
+  }
+}
+
+.hero {
+  max-width: 500px;
+  margin: 0 auto;
+  float: none;
+  padding: 20px 40px;
+}
+
+.hero a {
+  color: inherit;
+  box-shadow: inset 0 -0.05em #fff, inset 0 -0.1em #b88b58;
+  /* border-bottom: 1px solid #b88b58; */
+}
+.hero a:hover {
+  color: #b88b58;
+  /* border-bottom: 1px solid #b88b58; */
+}
+
+.hero p {
+  margin-top: 3ex;
+}
+
+.hero li {
+  position: relative;
+  padding-left: 23px;
+  margin-top: .5ex;
+}
+
+.hero li:before {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  width: 8px;
+  content: '\2022';
+  text-align: center;
+  color: #b88b58;
+  font-weight: 400;
+  line-height: inherit;
+  /* padding-right: 8px; */
+  /* color: #b88b58; */
+}
+
+.hero .contacts {
+  line-height: 1.75;
+}
